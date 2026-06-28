@@ -1,29 +1,30 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-  title: blank # the website title (if blank, full name will be used instead)
-  first_name: Mohammad
-  # middle_name: R.
-  last_name: Aghajani Asl
-  contact_note: >
-    The fastest way to reach me is by email — I welcome inquiries about
-    research collaborations, PhD opportunities, and applied AI work.
-  description: > # the ">" symbol means to ignore newlines until "footer_text:"
-    Personal academic website of Mohammad Aghajani Asl, an AI/NLP researcher
-    working on Trustworthy AI, automated fact-checking, and agentic
-    retrieval-augmented generation (RAG) for faithful, evidence-grounded reasoning.
-  footer_text: >
-    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-    Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  keywords: Mohammad Aghajani Asl, NLP, LLM, RAG, fact-checking, trustworthy AI, agentic AI, retrieval-augmented generation, question answering, Persian NLP
-  lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-  icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-  url: https://aghajani76m.github.io # the base hostname & protocol for your site
-  baseurl: "" # the subpath of your site. Leave blank for a user/root site (username.github.io)
-  email: aghajani76m@gmail.com
-  last_updated: true # set to true if you want to display last updated in the footer
-  impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-  back_to_top: true # set to false to disable the back to top button
+
+title: blank # the website title (if blank, full name will be used instead)
+first_name: Mohammad
+# middle_name: R.
+last_name: Aghajani Asl
+contact_note: >
+  The fastest way to reach me is by email — I welcome inquiries about
+  research collaborations, PhD opportunities, and applied AI work.
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  Personal academic website of Mohammad Aghajani Asl, an AI/NLP researcher
+  working on Trustworthy AI, automated fact-checking, and agentic
+  retrieval-augmented generation (RAG) for faithful, evidence-grounded reasoning.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+keywords: Mohammad Aghajani Asl, NLP, LLM, RAG, fact-checking, trustworthy AI, agentic AI, retrieval-augmented generation, question answering, Persian NLP
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+url: https://aghajani76m.github.io # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site. Leave blank for a user/root site (username.github.io)
+email: aghajani76m@gmail.com
+last_updated: true # set to true if you want to display last updated in the footer
+impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+back_to_top: true # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------
 # Theme
