@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: AI/NLP Researcher · Trustworthy AI, Fact-Checking & Agentic RAG
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Tehran, Iran</p>
+    <p>aghajani76m@gmail.com</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +26,24 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an AI/NLP researcher focused on **Trustworthy AI** and **automated
+fact-checking** — building systems that verify claims against real evidence
+and generate faithful, hallucination-resistant answers. My work centers on
+**agentic retrieval-augmented generation (RAG)**, where multiple reasoning
+steps and explicit evidence assessment replace single-shot generation.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I bring a quantitative foundation from physics: I hold an M.Sc. and B.Sc. in
+Physics from [Sharif University of Technology](https://en.sharif.edu/), one of
+Iran's top institutions, where I specialized in Complex Systems. That training
+shapes how I approach NLP — rigorously, with attention to evaluation and to the
+mechanisms behind a model's behavior, not just its outputs.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My recent research includes **FAIR-RAG**, a novel agentic framework for faithful
+multi-hop reasoning that achieves state-of-the-art results on standard
+benchmarks, and **IslamicPCQA** (IEEE TASLP), the first large-scale Persian
+dataset for complex multi-hop question answering. Alongside research, I build
+applied AI systems — from evidence-grounded scholarly writing assistants to
+fraud-risk detection for large-scale online platforms.
+
+I am currently seeking a **PhD position** to advance research on trustworthy,
+verifiable AI. Feel free to reach out — my email is the best way to contact me.
