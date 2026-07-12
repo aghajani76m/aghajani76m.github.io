@@ -62,21 +62,25 @@ style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; bor
   </a>
 
 <a
-  href="https://www.linkedin.com/in/mohammad-aghajani-asl/"
-  target="_blank"
-  rel="noopener"
-  style="
-    display: inline-block;
-    padding: 0.7rem 1.1rem;
-    border-radius: 0.4rem;
-    border: 1px solid var(--global-theme-color);
-    color: var(--global-theme-color);
-    text-decoration: none;
-    font-weight: 500;
-  "
+href="https://www.linkedin.com/in/mohammad-aghajani-asl/"
+target="_blank"
+rel="noopener"
+style="
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+"
+
 >
-  LinkedIn
-  </a>
+
+    LinkedIn
+
+    </a>
+
 </div>
 
 ## Research Collaboration
