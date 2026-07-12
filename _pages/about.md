@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI/NLP Researcher & Engineer · Trustworthy AI · Agentic RAG · Persian NLP
+subtitle: AI/NLP Researcher & Engineer
 
 profile:
   align: right
@@ -44,6 +44,6 @@ Alongside academic research, I have designed and implemented applied AI systems 
 
 ### Current Focus
 
-I am currently seeking **PhD opportunities in NLP, Trustworthy AI, Agentic RAG, Automated Fact-Checking, and AI for Science**. I am particularly interested in research on reliable language models that can reason over multiple sources, recognize missing evidence, and produce transparent, verifiable outputs.
+I am currently seeking **PhD opportunities in NLP, Trustworthy AI, Agentic AI, Automated Fact-Checking, and AI for Science**. I am particularly interested in research on reliable language models that can reason over multiple sources, recognize missing evidence, and produce transparent, verifiable outputs.
 
 For research collaborations, PhD opportunities, or applied AI projects, the best way to reach me is by email.
