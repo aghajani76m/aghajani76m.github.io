@@ -36,72 +36,84 @@ The most reliable way to contact me is by email. I am also available through my 
     Send an Email
   </a>
 
-  <a
-    href="https://www.linkedin.com/in/mohammad-aghajani-asl/"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display: inline-block;
-      padding: 0.7rem 1.1rem;
-      border: 1px solid var(--global-theme-color);
-      border-radius: 0.4rem;
-      color: var(--global-theme-color);
-      text-decoration: none;
-      font-weight: 500;
-    "
-  >
+<a
+href="https://www.linkedin.com/in/mohammad-aghajani-asl/"
+target="\_blank"
+rel="noopener noreferrer"
+style="
+display: inline-block;
+padding: 0.7rem 1.1rem;
+border: 1px solid var(--global-theme-color);
+border-radius: 0.4rem;
+color: var(--global-theme-color);
+text-decoration: none;
+font-weight: 500;
+"
+
+>
+
     LinkedIn
+
   </a>
 
-  <a
-    href="https://github.com/aghajani76m"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display: inline-block;
-      padding: 0.7rem 1.1rem;
-      border: 1px solid var(--global-theme-color);
-      border-radius: 0.4rem;
-      color: var(--global-theme-color);
-      text-decoration: none;
-      font-weight: 500;
-    "
-  >
+<a
+href="https://github.com/aghajani76m"
+target="\_blank"
+rel="noopener noreferrer"
+style="
+display: inline-block;
+padding: 0.7rem 1.1rem;
+border: 1px solid var(--global-theme-color);
+border-radius: 0.4rem;
+color: var(--global-theme-color);
+text-decoration: none;
+font-weight: 500;
+"
+
+>
+
     GitHub
+
   </a>
 
-  <a
-    href="https://scholar.google.com/citations?user=CvS9EW8AAAAJ"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display: inline-block;
-      padding: 0.7rem 1.1rem;
-      border: 1px solid var(--global-theme-color);
-      border-radius: 0.4rem;
-      color: var(--global-theme-color);
-      text-decoration: none;
-      font-weight: 500;
-    "
-  >
+<a
+href="https://scholar.google.com/citations?user=CvS9EW8AAAAJ"
+target="\_blank"
+rel="noopener noreferrer"
+style="
+display: inline-block;
+padding: 0.7rem 1.1rem;
+border: 1px solid var(--global-theme-color);
+border-radius: 0.4rem;
+color: var(--global-theme-color);
+text-decoration: none;
+font-weight: 500;
+"
+
+>
+
     Google Scholar
+
   </a>
 
-  <a
-    href="https://www.researchgate.net/profile/Mohammad-Aghajani-Asl"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display: inline-block;
-      padding: 0.7rem 1.1rem;
-      border: 1px solid var(--global-theme-color);
-      border-radius: 0.4rem;
-      color: var(--global-theme-color);
-      text-decoration: none;
-      font-weight: 500;
-    "
-  >
+<a
+href="https://www.researchgate.net/profile/Mohammad-Aghajani-Asl"
+target="\_blank"
+rel="noopener noreferrer"
+style="
+display: inline-block;
+padding: 0.7rem 1.1rem;
+border: 1px solid var(--global-theme-color);
+border-radius: 0.4rem;
+color: var(--global-theme-color);
+text-decoration: none;
+font-weight: 500;
+"
+
+>
+
     ResearchGate
+
   </a>
 </div>
 
