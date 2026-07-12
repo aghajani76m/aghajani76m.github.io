@@ -25,13 +25,16 @@ category: research
     Paper
   </a>
 
-  <a
-    class="btn btn-outline-primary"
-    href="https://arxiv.org/pdf/2510.25621"
-    target="_blank"
-    rel="noopener"
-  >
+<a
+class="btn btn-outline-primary"
+href="https://arxiv.org/pdf/2510.25621"
+target="\_blank"
+rel="noopener"
+
+>
+
     PDF
+
   </a>
 </div>
 

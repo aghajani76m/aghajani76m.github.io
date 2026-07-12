@@ -19,12 +19,15 @@ My curriculum vitae presents my research background, publications, engineering e
     Open CV as PDF
   </a>
 
-  <a
-    href="{{ '/assets/pdf/Mohammad_Aghajani_Asl_CV.pdf' | relative_url }}"
-    download
-    style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; border: 1px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 500;"
-  >
+<a
+href="{{ '/assets/pdf/Mohammad_Aghajani_Asl_CV.pdf' | relative_url }}"
+download
+style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; border: 1px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 500;"
+
+>
+
     Download CV
+
   </a>
 </div>
 

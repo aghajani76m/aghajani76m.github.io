@@ -32,6 +32,7 @@ horizontal: false
         {% include projects.liquid %}
       {% endfor %}
     </div>
+
   </section>
 
   <hr class="my-5">
@@ -53,6 +54,7 @@ horizontal: false
         {% include projects.liquid %}
       {% endfor %}
     </div>
+
   </section>
 
   <hr class="my-5">
@@ -74,6 +76,7 @@ horizontal: false
         {% include projects.liquid %}
       {% endfor %}
     </div>
+
   </section>
 
 </div>
@@ -90,11 +93,11 @@ horizontal: false
     opacity: 1 !important;
   }
 
-  @media (max-width: 576px) {
-    .project-section-title {
-      margin-top: 2.25rem;
-      margin-bottom: 1rem;
-      font-size: 1.65rem;
-    }
-  }
+@media (max-width: 576px) {
+.project-section-title {
+margin-top: 2.25rem;
+margin-bottom: 1rem;
+font-size: 1.65rem;
+}
+}
 </style>

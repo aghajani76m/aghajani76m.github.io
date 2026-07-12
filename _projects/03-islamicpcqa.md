@@ -25,13 +25,16 @@ category: research
     IEEE Paper
   </a>
 
-  <a
-    class="btn btn-outline-primary"
-    href="https://ieeexplore.ieee.org/document/11075543"
-    target="_blank"
-    rel="noopener"
-  >
+<a
+class="btn btn-outline-primary"
+href="https://ieeexplore.ieee.org/document/11075543"
+target="\_blank"
+rel="noopener"
+
+>
+
     IEEE Xplore
+
   </a>
 </div>
 
@@ -226,12 +229,12 @@ Supporting-fact annotation is useful for:
 
 The final dataset is divided into:
 
-| Split | Samples |
-|---|---:|
-| Training | 9,000 |
-| Development | 1,641 |
-| Test | 1,641 |
-| **Total** | **12,282** |
+| Split       |    Samples |
+| ----------- | ---------: |
+| Training    |      9,000 |
+| Development |      1,641 |
+| Test        |      1,641 |
+| **Total**   | **12,282** |
 
 ## Evaluation Settings
 
