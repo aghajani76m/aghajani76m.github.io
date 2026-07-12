@@ -1,65 +1,103 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected research, applied AI, and data-engineering projects by Mohammad Aghajani Asl.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 2
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
+<p class="lead">
+  A selection of my research and engineering work in trustworthy AI,
+  agentic AI, Persian NLP, intelligent systems, and large-scale data infrastructure.
+</p>
+
 <div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+
+  <section id="research-projects" class="mb-5">
+    <h2 class="project-section-title">Research Projects</h2>
+    <p class="text-muted">
+      Academic and research-oriented projects focused on trustworthy AI,
+      multi-hop reasoning, question answering, and evidence-grounded generation.
+    </p>
+
+    {% assign research_projects = site.projects
+      | where: "category", "research"
+      | sort: "importance"
+    %}
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for project in research_projects %}
+        {% include projects.liquid %}
+      {% endfor %}
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
 
-{% else %}
+  </section>
 
-<!-- Display projects without categories -->
+  <hr class="my-5">
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+  <section id="applied-ai-systems" class="mb-5">
+    <h2 class="project-section-title">Applied AI Systems</h2>
+    <p class="text-muted">
+      End-to-end AI systems designed for real-world users, operational constraints,
+      decision support, and intelligent product experiences.
+    </p>
 
-  <!-- Generate cards for each project -->
+    {% assign applied_projects = site.projects
+      | where: "category", "applied-ai"
+      | sort: "importance"
+    %}
 
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for project in applied_projects %}
+        {% include projects.liquid %}
+      {% endfor %}
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+
+  </section>
+
+  <hr class="my-5">
+
+  <section id="data-engineering-infrastructure" class="mb-5">
+    <h2 class="project-section-title">Data Engineering & Infrastructure</h2>  
+    <p class="text-muted">
+      Large-scale crawling, indexing, dataset construction, model training,
+      and production data infrastructure for Persian-language AI systems.
+    </p>
+
+    {% assign infrastructure_projects = site.projects
+      | where: "category", "data-infrastructure"
+      | sort: "importance"
+    %}
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for project in infrastructure_projects %}
+        {% include projects.liquid %}
+      {% endfor %}
+    </div>
+
+  </section>
+
 </div>
+<style>
+  .project-section-title {
+    margin: 3rem 0 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-text-color) !important;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: left !important;
+    opacity: 1 !important;
+  }
+
+@media (max-width: 576px) {
+.project-section-title {
+margin-top: 2.25rem;
+margin-bottom: 1rem;
+font-size: 1.65rem;
+}
+}
+</style>
