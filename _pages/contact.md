@@ -2,85 +2,107 @@
 layout: page
 title: Contact
 permalink: /contact/
-description: Contact Mohammad Aghajani Asl regarding PhD opportunities, research collaborations, trustworthy AI, NLP, agentic RAG, and applied AI projects.
+description: Contact Mohammad Aghajani Asl regarding PhD opportunities, research collaborations, trustworthy AI, NLP, agentic AI, and applied AI projects.
 nav: true
 nav_order: 4
 ---
 
 ## Get in Touch
 
-I am currently interested in PhD opportunities and research collaborations in Natural Language Processing, Trustworthy AI, Agentic RAG, automated fact-checking, question answering, and AI for Science.
+I am currently interested in PhD opportunities and research collaborations in Natural Language Processing, Trustworthy AI, Agentic AI, automated fact-checking, question answering, and AI for Science.
 
 The most reliable way to contact me is by email. I am also available through my academic and professional profiles.
 
-<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 2rem 0;">
-
-<a
-href="mailto:aghajani76m@gmail.com"
-style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; background: var(--global-theme-color); color: white; text-decoration: none; font-weight: 500;"
-
+<div
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem 0;
+  "
 >
-
+  <a
+    href="mailto:aghajani76m@gmail.com"
+    style="
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border-radius: 0.4rem;
+      background: var(--global-theme-color);
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
     Send an Email
-
   </a>
 
-<a
-href="https://github.com/aghajani76m"
-target="\_blank"
-rel="noopener"
-style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; border: 1px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 500;"
-
->
-
-    GitHub
-
-  </a>
-
-<a
-href="https://scholar.google.com/citations?user=CvS9EW8AAAAJ"
-target="\_blank"
-rel="noopener"
-style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; border: 1px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 500;"
-
->
-
-    Google Scholar
-
-  </a>
-
-<a
-href="https://www.researchgate.net/profile/Mohammad-Aghajani-Asl"
-target="\_blank"
-rel="noopener"
-style="display: inline-block; padding: 0.7rem 1.1rem; border-radius: 0.4rem; border: 1px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 500;"
-
->
-
-    ResearchGate
-
-  </a>
-
-<a
-href="https://www.linkedin.com/in/mohammad-aghajani-asl/"
-target="_blank"
-rel="noopener"
-style="
-  display: inline-block;
-  padding: 0.7rem 1.1rem;
-  border-radius: 0.4rem;
-  border: 1px solid var(--global-theme-color);
-  color: var(--global-theme-color);
-  text-decoration: none;
-  font-weight: 500;
-"
-
->
-
+  <a
+    href="https://www.linkedin.com/in/mohammad-aghajani-asl/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 0.4rem;
+      color: var(--global-theme-color);
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
     LinkedIn
+  </a>
 
-    </a>
+  <a
+    href="https://github.com/aghajani76m"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 0.4rem;
+      color: var(--global-theme-color);
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    GitHub
+  </a>
 
+  <a
+    href="https://scholar.google.com/citations?user=CvS9EW8AAAAJ"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 0.4rem;
+      color: var(--global-theme-color);
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    Google Scholar
+  </a>
+
+  <a
+    href="https://www.researchgate.net/profile/Mohammad-Aghajani-Asl"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 0.4rem;
+      color: var(--global-theme-color);
+      text-decoration: none;
+      font-weight: 500;
+    "
+  >
+    ResearchGate
+  </a>
 </div>
 
 ## Research Collaboration
