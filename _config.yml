@@ -195,8 +195,19 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  books:
+    output: false
+
+  news:
+    defaults:
+      layout: post
+    output: false
+
   projects:
     output: true
+
+  teachings:
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -702,3 +713,4 @@ third_party_libraries:
 #   - languages
 #   - interests
 #   - references
+# Empty theme collections retained for plugin compatibility.
