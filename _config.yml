@@ -15,8 +15,8 @@ description: >
   engineer working on trustworthy AI, agentic retrieval-augmented generation,
   multi-hop reasoning, automated fact-checking, and Persian NLP.
 
-footer_text: >
-  © 2026 Mohammad Aghajani Asl. Built with al-folio and hosted on GitHub Pages.
+footer_text: >-
+  Built with al-folio and hosted on GitHub Pages.
 
 keywords: >
   Mohammad Aghajani Asl, NLP, artificial intelligence, trustworthy AI,
@@ -95,7 +95,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: false

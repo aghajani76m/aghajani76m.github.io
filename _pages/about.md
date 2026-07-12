@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: AI/NLP Researcher & Engineer · Trustworthy AI · Agentic AI · Persian NLP
 
