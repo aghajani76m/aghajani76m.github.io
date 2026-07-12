@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: Selected research, applied AI, and data-engineering projects by Mohammad Aghajani Asl.
 nav: true
-nav_order: 3
+nav_order: 2
 horizontal: false
 ---
 

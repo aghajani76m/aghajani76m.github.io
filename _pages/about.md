@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI/NLP Researcher & Engineer
+subtitle: AI/NLP Researcher & Engineer · Trustworthy AI · Agentic AI · Persian NLP
 
 profile:
   align: right

@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: Peer-reviewed publications and research preprints in trustworthy AI, agentic RAG, multi-hop reasoning, question answering, and Persian NLP.
 nav: true
-nav_order: 2
+nav_order: 1
 ---
 
 My research focuses on trustworthy and evidence-grounded AI, agentic retrieval-augmented generation, multi-hop reasoning, question answering, and Persian NLP.

@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 description: Academic and professional CV of Mohammad Aghajani Asl, an AI and NLP researcher working on trustworthy AI, agentic RAG, question answering, Persian NLP, and large-scale data infrastructure.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 My curriculum vitae presents my research background, publications, engineering experience, education, technical expertise, and selected AI and NLP projects.

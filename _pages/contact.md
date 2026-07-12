@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 description: Contact Mohammad Aghajani Asl regarding PhD opportunities, research collaborations, trustworthy AI, NLP, agentic RAG, and applied AI projects.
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 ## Get in Touch
