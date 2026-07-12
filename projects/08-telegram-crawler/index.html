@@ -1,0 +1,183 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> TELEGRAM_CRAWLER | Mohammad Aghajani Asl </title> <meta name="author" content="Mohammad Aghajani Asl"> <meta name="description" content="A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing."> <meta name="keywords" content="Mohammad Aghajani Asl, NLP, artificial intelligence, trustworthy AI, agentic RAG, retrieval-augmented generation, multi-hop reasoning, automated fact-checking, hallucination mitigation, question answering, information retrieval, Persian NLP, low-resource NLP, AI for science "> <meta property="og:site_name" content="Mohammad Aghajani Asl"> <meta property="og:type" content="website"> <meta property="og:title" content="Mohammad Aghajani Asl | TELEGRAM_CRAWLER"> <meta property="og:url" content="https://aghajani76m.github.io/projects/08-telegram-crawler/"> <meta property="og:description" content="A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing."> <meta property="og:image" content="/assets/img/og_image.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="TELEGRAM_CRAWLER"> <meta name="twitter:description" content="A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing."> <meta name="twitter:image" content="/assets/img/og_image.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Mohammad Aghajani Asl"
+        },
+        "url": "https://aghajani76m.github.io/projects/08-telegram-crawler/",
+        "@type": "WebSite",
+        "description": "A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing.",
+        "headline": "TELEGRAM_CRAWLER",
+        
+        "sameAs": [null,"https://github.com/aghajani76m","https://scholar.google.com/citations?user=CvS9EW8AAAAJ","https://www.researchgate.net/profile/Mohammad-Aghajani-Asl/"],
+        
+        "name": "Mohammad Aghajani Asl",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.png?v=89b6499757ed788c107e8e3d30c4aeea"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://aghajani76m.github.io/projects/08-telegram-crawler/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Mohammad Aghajani Asl </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">Contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">TELEGRAM_CRAWLER</h1> <p class="post-description">A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing.</p> </header> <article> <div class="text-center mb-4"> <img src="/assets/img/projects/telegram-crawler/cover.png" alt="TELEGRAM_CRAWLER scalable Telegram data-collection infrastructure" class="img-fluid rounded z-depth-1"> </div> <div class="d-flex flex-wrap justify-content-center gap-2 mb-4"> <span class="badge rounded-pill text-bg-primary px-3 py-2"> Data Infrastructure </span> <span class="badge rounded-pill text-bg-light border px-3 py-2"> Distributed Crawling </span> <span class="badge rounded-pill text-bg-light border px-3 py-2"> Asynchronous Python </span> <span class="badge rounded-pill text-bg-light border px-3 py-2"> Search Infrastructure </span> </div> <h2 id="overview">Overview</h2> <p><strong>TELEGRAM_CRAWLER</strong> is a scalable data-collection and indexing infrastructure designed to acquire, normalize, and maintain large historical and continuously updated Telegram datasets.</p> <p>The system is implemented in Python using <strong>Telethon</strong> and an asynchronous worker architecture. It supports controlled collection from authorized public or otherwise permitted sources while maintaining operational reliability under long-running workloads, network interruptions, variable source activity, and platform-level constraints.</p> <p>Rather than functioning as a single scraping script, the project was designed as a complete data-engineering system containing:</p> <ul> <li>task scheduling,</li> <li>session orchestration,</li> <li>asynchronous worker execution,</li> <li>incremental synchronization,</li> <li>persistent checkpoints,</li> <li>retry and backoff control,</li> <li>schema normalization,</li> <li>duplicate prevention,</li> <li>searchable indexing,</li> <li>and operational monitoring.</li> </ul> <p>The public portfolio intentionally focuses on architecture and engineering capability rather than exposing exact collection volumes, session counts, internal thresholds, or infrastructure-specific configuration.</p> <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center my-4"> <div class="col"> <div class="card h-100"> <div class="card-body"> <h4 class="mb-2">Asynchronous</h4> <small>Concurrent collection without blocking the complete pipeline</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h4 class="mb-2">Incremental</h4> <small>Only new or changed records are synchronized after each checkpoint</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h4 class="mb-2">Fault-tolerant</h4> <small>Interrupted jobs can resume without restarting the entire collection</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h4 class="mb-2">Search-ready</h4> <small>Normalized records are prepared for indexing and analytical retrieval</small> </div> </div> </div> </div> <h2 id="the-engineering-challenge">The Engineering Challenge</h2> <p>Collecting social-platform data reliably at scale is fundamentally different from downloading a small number of pages.</p> <p>A production collection system must operate continuously while handling:</p> <ul> <li>sources with very different activity levels,</li> <li>long message histories,</li> <li>temporary network failures,</li> <li>deleted or inaccessible records,</li> <li>changing metadata,</li> <li>duplicate events,</li> <li>interrupted workers,</li> <li>platform-imposed request constraints,</li> <li>and downstream indexing pressure.</li> </ul> <p>A naive implementation may repeatedly download the same content, lose progress when a worker stops, overload storage, or silently skip records.</p> <p>TELEGRAM_CRAWLER addresses these problems through a stateful, distributed, and recoverable architecture.</p> <h2 id="high-level-architecture">High-level Architecture</h2> <div class="text-center my-4"> <img src="/assets/img/projects/telegram-crawler/system-architecture.png" alt="High-level architecture of the distributed Telegram collection system" class="img-fluid rounded z-depth-1"> </div> <p>The platform is divided into several independent layers.</p> <h3 id="collection-target-management">Collection-target Management</h3> <p>Authorized collection targets are registered with metadata describing:</p> <ul> <li>source identifier,</li> <li>collection status,</li> <li>synchronization policy,</li> <li>previous checkpoint,</li> <li>priority,</li> <li>and permitted data types.</li> </ul> <p>The system does not rely on hard-coded channel lists inside worker processes.</p> <h3 id="task-scheduler">Task Scheduler</h3> <p>The scheduler converts collection targets into executable tasks.</p> <p>Its responsibilities include:</p> <ul> <li>prioritizing pending sources,</li> <li>preventing duplicate concurrent jobs,</li> <li>delaying temporarily unavailable sources,</li> <li>distributing tasks between workers,</li> <li>and rescheduling incomplete work.</li> </ul> <h3 id="telethon-session-layer">Telethon Session Layer</h3> <p>The collection layer uses Telethon clients through isolated, authorized sessions.</p> <p>Session management is separated from crawling logic so that workers can:</p> <ul> <li>obtain a healthy client,</li> <li>report session failures,</li> <li>release resources after completion,</li> <li>and avoid embedding credentials inside task definitions.</li> </ul> <p>The public implementation description intentionally excludes operational session counts, authentication details, and credential-management configuration.</p> <h3 id="asynchronous-workers">Asynchronous Workers</h3> <p>Workers perform network-bound collection asynchronously.</p> <p>They can process multiple independent tasks while waiting for network responses, improving resource utilization compared with a sequential collector.</p> <p>Each worker follows the same controlled lifecycle:</p> <ol> <li>obtain a task,</li> <li>load the previous checkpoint,</li> <li>retrieve permitted records,</li> <li>normalize and validate each record,</li> <li>persist progress,</li> <li>forward accepted records for indexing,</li> <li>and report completion or recoverable failure.</li> </ol> <h3 id="processing-and-storage">Processing and Storage</h3> <p>Raw Telegram objects are converted into a consistent internal schema before storage.</p> <p>This prevents downstream services from depending directly on Telethon-specific object structures.</p> <h3 id="indexing-and-serving">Indexing and Serving</h3> <p>Normalized records are indexed in Elasticsearch and exposed through analytical APIs.</p> <p>The surrounding infrastructure supports large historical collections and high-throughput search, aggregation, user profiling, and trend-analysis workloads.</p> <h2 id="collection-lifecycle">Collection Lifecycle</h2> <div class="text-center my-4"> <img src="/assets/img/projects/telegram-crawler/collection-lifecycle.png" alt="Incremental Telegram collection, checkpointing, and recovery lifecycle" class="img-fluid rounded z-depth-1"> </div> <p>Each collection task progresses through a controlled lifecycle.</p> <h3 id="1-source-registration">1. Source Registration</h3> <p>A source is added only after its collection scope and authorization have been established.</p> <p>The registration record stores the information required to schedule future synchronization without exposing credentials to the worker queue.</p> <h3 id="2-checkpoint-loading">2. Checkpoint Loading</h3> <p>Before requesting records, the worker loads the most recent successfully persisted state.</p> <p>Depending on the source and collection mode, the checkpoint may represent:</p> <ul> <li>the newest processed message,</li> <li>the oldest completed historical segment,</li> <li>a pagination cursor,</li> <li>or a time-based synchronization boundary.</li> </ul> <h3 id="3-incremental-retrieval">3. Incremental Retrieval</h3> <p>The worker retrieves only the portion of the source that has not already been processed.</p> <p>Incremental synchronization reduces:</p> <ul> <li>unnecessary network requests,</li> <li>duplicate processing,</li> <li>storage overhead,</li> <li>and index-update cost.</li> </ul> <h3 id="4-validation-and-normalization">4. Validation and Normalization</h3> <p>Retrieved objects are checked for structural validity and transformed into the project’s internal schema.</p> <h3 id="5-deduplication">5. Deduplication</h3> <p>Stable identifiers and source-aware keys are used to prevent duplicate records when:</p> <ul> <li>jobs are retried,</li> <li>workers restart,</li> <li>checkpoints overlap,</li> <li>or a source is synchronized from multiple processing stages.</li> </ul> <h3 id="6-checkpoint-persistence">6. Checkpoint Persistence</h3> <p>Progress is persisted in small, recoverable increments.</p> <p>A worker failure therefore affects only the unfinished portion of a task rather than invalidating the entire collection process.</p> <h3 id="7-rescheduling">7. Rescheduling</h3> <p>After successful synchronization, the source is scheduled according to its expected update frequency and operational priority.</p> <h2 id="collected-data-model">Collected Data Model</h2> <p>Depending on source permissions and project requirements, the normalized model can represent:</p> <ul> <li>message text,</li> <li>source and message identifiers,</li> <li>publication timestamps,</li> <li>edits and deletion state,</li> <li>reply relationships,</li> <li>forward metadata,</li> <li>media metadata,</li> <li>extracted entities,</li> <li>view and interaction counters,</li> <li>source metadata,</li> <li>and collection provenance.</li> </ul> <p>The schema distinguishes between:</p> <ul> <li>information directly observed from the source,</li> <li>metadata generated during collection,</li> <li>and features produced later by NLP or analytical services.</li> </ul> <p>This separation improves traceability and simplifies reprocessing.</p> <h2 id="reliability-and-observability">Reliability and Observability</h2> <div class="text-center my-4"> <img src="/assets/img/projects/telegram-crawler/reliability-observability.png" alt="Reliability, monitoring, checkpointing, and fault-recovery controls" class="img-fluid rounded z-depth-1"> </div> <p>Reliability is implemented at several levels.</p> <h3 id="retry-with-controlled-backoff">Retry with Controlled Backoff</h3> <p>Temporary failures are retried using increasing delays rather than immediate repeated requests.</p> <p>Permanent and temporary failures are classified differently so that invalid sources do not remain in an endless retry loop.</p> <h3 id="rate-aware-scheduling">Rate-aware Scheduling</h3> <p>The scheduler accounts for platform feedback and temporary availability constraints.</p> <p>The objective is stable and compliant execution, not circumvention of platform restrictions.</p> <h3 id="fault-isolation">Fault Isolation</h3> <p>A failure in one source or session does not stop unrelated collection tasks.</p> <p>Tasks are processed independently, and failures are recorded with enough context for later inspection.</p> <h3 id="persistent-checkpoints">Persistent Checkpoints</h3> <p>Checkpoints allow workers to resume collection after:</p> <ul> <li>process restarts,</li> <li>server maintenance,</li> <li>temporary network loss,</li> <li>and controlled deployment updates.</li> </ul> <h3 id="idempotent-processing">Idempotent Processing</h3> <p>Repeated processing of the same event produces the same final record rather than creating duplicates.</p> <h3 id="backpressure">Backpressure</h3> <p>When storage or indexing components slow down, the collection layer reduces intake instead of accumulating an uncontrolled in-memory backlog.</p> <h3 id="monitoring">Monitoring</h3> <p>Operational monitoring can cover:</p> <ul> <li>active and idle workers,</li> <li>queued tasks,</li> <li>recent completions,</li> <li>retries,</li> <li>source-level failures,</li> <li>indexing latency,</li> <li>checkpoint age,</li> <li>and session health.</li> </ul> <p>Sensitive identifiers and authentication material are excluded from public dashboards.</p> <h2 id="indexing-pipeline">Indexing Pipeline</h2> <div class="text-center my-4"> <img src="/assets/img/projects/telegram-crawler/indexing-pipeline.png" alt="Telegram event normalization and Elasticsearch indexing pipeline" class="img-fluid rounded z-depth-1"> </div> <p>Raw Telegram objects are not inserted directly into the analytical index.</p> <p>The indexing pipeline performs:</p> <ol> <li>schema conversion,</li> <li>text normalization,</li> <li>timestamp standardization,</li> <li>entity and metadata extraction,</li> <li>duplicate detection,</li> <li>source and provenance attachment,</li> <li>index routing,</li> <li>and controlled bulk indexing.</li> </ol> <p>Search-oriented mappings are designed according to query requirements rather than mirroring the source API objects.</p> <p>The index can support operations such as:</p> <ul> <li>full-text search,</li> <li>time-range filtering,</li> <li>source-level aggregation,</li> <li>language filtering,</li> <li>relationship analysis,</li> <li>trend extraction,</li> <li>user profiling,</li> <li>and downstream NLP processing.</li> </ul> <h2 id="scaling-strategy">Scaling Strategy</h2> <p>The system scales horizontally by separating collection state from worker processes.</p> <p>Additional workers can be introduced without requiring the complete source list to be divided manually.</p> <p>The main scaling principles include:</p> <ul> <li>stateless or minimally stateful workers,</li> <li>centralized task coordination,</li> <li>persistent checkpoints,</li> <li>independently scalable indexing,</li> <li>batch-oriented database operations,</li> <li>and source-aware partitioning.</li> </ul> <p>The project demonstrates the ability to engineer and operate distributed Telegram data collection without publishing sensitive operational quantities.</p> <h2 id="responsible-data-collection">Responsible Data Collection</h2> <p>The infrastructure is intended for authorized research and analytical use.</p> <p>Responsible operation requires:</p> <ul> <li>collecting only public or otherwise permitted data,</li> <li>respecting platform policies and applicable law,</li> <li>avoiding access to private conversations without authorization,</li> <li>minimizing unnecessary personal-data retention,</li> <li>applying access controls to collected records,</li> <li>documenting data provenance,</li> <li>and defining retention and deletion procedures.</li> </ul> <p>The system architecture does not treat technical accessibility as automatic permission for unrestricted collection.</p> <h2 id="public-portfolio-disclosure">Public Portfolio Disclosure</h2> <p>The public project page intentionally does not disclose:</p> <ul> <li>exact message volume,</li> <li>exact account or session count,</li> <li>phone numbers,</li> <li>session strings,</li> <li>API credentials,</li> <li>proxy or network configuration,</li> <li>internal source lists,</li> <li>Elasticsearch index names,</li> <li>server addresses,</li> <li>operational thresholds,</li> <li>or platform-specific recovery procedures.</li> </ul> <p>These details are unnecessary for evaluating the engineering contribution and could expose security-sensitive operational information.</p> <p>Instead, the portfolio focuses on:</p> <ul> <li>system architecture,</li> <li>asynchronous programming,</li> <li>data consistency,</li> <li>scalability,</li> <li>reliability,</li> <li>indexing,</li> <li>and production operations.</li> </ul> <h2 id="my-role">My Role</h2> <p>As the <strong>AI/NLP engineer and data-infrastructure lead</strong>, I contributed to:</p> <ul> <li>designing the distributed Telegram collection architecture,</li> <li>implementing asynchronous collection workflows with Telethon,</li> <li>designing task scheduling and worker coordination,</li> <li>developing persistent checkpoint and recovery mechanisms,</li> <li>implementing source-aware deduplication,</li> <li>defining normalized message and metadata schemas,</li> <li>integrating the collection layer with Elasticsearch,</li> <li>optimizing bulk and near-real-time indexing,</li> <li>implementing monitoring and failure reporting,</li> <li>coordinating production deployment,</li> <li>and preparing the collected data for downstream NLP, user-profile, and trend-analysis systems.</li> </ul> <h2 id="technology-stack">Technology Stack</h2> <p><code class="language-plaintext highlighter-rouge">Python</code> · <code class="language-plaintext highlighter-rouge">Telethon</code> · <code class="language-plaintext highlighter-rouge">AsyncIO</code> · <code class="language-plaintext highlighter-rouge">Elasticsearch</code> · <code class="language-plaintext highlighter-rouge">Redis</code> · <code class="language-plaintext highlighter-rouge">FastAPI</code> · <code class="language-plaintext highlighter-rouge">Docker</code> · <code class="language-plaintext highlighter-rouge">Kibana</code> · <code class="language-plaintext highlighter-rouge">Distributed Workers</code> · <code class="language-plaintext highlighter-rouge">Task Queues</code> · <code class="language-plaintext highlighter-rouge">Checkpointing</code> · <code class="language-plaintext highlighter-rouge">Structured Logging</code></p> <h2 id="project-significance">Project Significance</h2> <p>TELEGRAM_CRAWLER demonstrates the transition from a conventional scraping script to a production-oriented data infrastructure.</p> <p>Its contribution lies in combining asynchronous collection, stateful synchronization, fault recovery, duplicate-safe processing, search-oriented indexing, and operational monitoring within a scalable and maintainable architecture.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Mohammad Aghajani Asl. © 2026 Mohammad Aghajani Asl. Built with al-folio and hosted on GitHub Pages. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "Peer-reviewed publications and research preprints in trustworthy AI, agentic RAG, multi-hop reasoning, question answering, and Persian NLP.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Selected research, applied AI, and data-engineering projects by Mohammad Aghajani Asl.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Academic and professional CV of Mohammad Aghajani Asl, an AI and NLP researcher working on trustworthy AI, agentic RAG, question answering, Persian NLP, and large-scale data infrastructure.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-contact",
+          title: "Contact",
+          description: "Contact Mohammad Aghajani Asl regarding PhD opportunities, research collaborations, trustworthy AI, NLP, agentic RAG, and applied AI projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
+        },{id: "projects-fair-rag",
+          title: 'FAIR-RAG',
+          description: "An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01-fair-rag/";
+            },},{id: "projects-farsiqa",
+          title: 'FARSIQA',
+          description: "An end-to-end, safety-aware Persian question-answering system built on FAIR-RAG for faithful reasoning over authoritative domain knowledge.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/02-farsiqa/";
+            },},{id: "projects-islamicpcqa",
+          title: 'IslamicPCQA',
+          description: "A large-scale Persian dataset and benchmark for multi-hop complex question answering over unstructured Islamic text resources.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/03-islamicpcqa/";
+            },},{id: "projects-hermes",
+          title: 'HERMES',
+          description: "A human-guided, evidence-grounded multi-agent system supporting the complete scholarly workflow for long-form humanities research and writing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/04-hermes/";
+            },},{id: "projects-hooshyar",
+          title: 'HOOSHYAR',
+          description: "An explainable AI advisory system that evaluates fraud-risk indicators in online classified listings and helps users make safer transaction decisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/05-hooshyar/";
+            },},{id: "projects-trendgeo",
+          title: 'TRENDGEO',
+          description: "A geospatial social-media intelligence platform for detecting, mapping, analyzing, and comparing regional and multilingual trends.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/06-trendgeo/";
+            },},{id: "projects-tizbin",
+          title: 'TIZBIN',
+          description: "A social-media user-discovery and behavioral-intelligence platform for profile enrichment, activity analysis, relationship discovery, and model-assisted user insights.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/07-tizbin/";
+            },},{id: "projects-telegram-crawler",
+          title: 'TELEGRAM_CRAWLER',
+          description: "A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/08-telegram-crawler/";
+            },},{id: "projects-twitter-crawler",
+          title: 'TWITTER_CRAWLER',
+          description: "A scalable and recoverable social-data ingestion infrastructure for collecting, normalizing, enriching, and indexing large continuously updated Twitter/X datasets.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/09-twitter-crawler/";
+            },},{id: "projects-large-scale-persian-nlp-amp-data-infrastructure",
+          title: 'Large-scale Persian NLP &amp;amp; Data Infrastructure',
+          description: "An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10-persian-nlp-infrastructure/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%61%67%68%61%6A%61%6E%69%37%36%6D@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/Mohammad_Aghajani_Asl_CV.pdf", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/aghajani76m", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=CvS9EW8AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Mohammad-Aghajani-Asl/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

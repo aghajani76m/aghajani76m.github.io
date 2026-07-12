@@ -1,0 +1,183 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> FAIR-RAG | Mohammad Aghajani Asl </title> <meta name="author" content="Mohammad Aghajani Asl"> <meta name="description" content="An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions."> <meta name="keywords" content="Mohammad Aghajani Asl, NLP, artificial intelligence, trustworthy AI, agentic RAG, retrieval-augmented generation, multi-hop reasoning, automated fact-checking, hallucination mitigation, question answering, information retrieval, Persian NLP, low-resource NLP, AI for science "> <meta property="og:site_name" content="Mohammad Aghajani Asl"> <meta property="og:type" content="website"> <meta property="og:title" content="Mohammad Aghajani Asl | FAIR-RAG"> <meta property="og:url" content="https://aghajani76m.github.io/projects/01-fair-rag/"> <meta property="og:description" content="An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions."> <meta property="og:image" content="/assets/img/og_image.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="FAIR-RAG"> <meta name="twitter:description" content="An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions."> <meta name="twitter:image" content="/assets/img/og_image.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Mohammad Aghajani Asl"
+        },
+        "url": "https://aghajani76m.github.io/projects/01-fair-rag/",
+        "@type": "WebSite",
+        "description": "An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions.",
+        "headline": "FAIR-RAG",
+        
+        "sameAs": [null,"https://github.com/aghajani76m","https://scholar.google.com/citations?user=CvS9EW8AAAAJ","https://www.researchgate.net/profile/Mohammad-Aghajani-Asl/"],
+        
+        "name": "Mohammad Aghajani Asl",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.png?v=89b6499757ed788c107e8e3d30c4aeea"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://aghajani76m.github.io/projects/01-fair-rag/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Mohammad Aghajani Asl </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">Contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">FAIR-RAG</h1> <p class="post-description">An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions.</p> </header> <article> <div class="text-center mb-4"> <img src="/assets/img/projects/fair-rag/cover.png" alt="FAIR-RAG project cover" class="img-fluid rounded z-depth-1"> </div> <div class="d-flex flex-wrap gap-2 justify-content-center mb-4"> <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2510.22344" target="_blank" rel="noopener"> Paper </a> <a class="btn btn-outline-primary" href="https://arxiv.org/pdf/2510.22344" target="_blank" rel="noopener"> PDF </a> </div> <h2 id="overview">Overview</h2> <p><strong>FAIR-RAG — Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation</strong> is an agentic RAG framework designed for complex, multi-hop questions that cannot be reliably answered through a single retrieval step.</p> <p>Instead of assuming that the initially retrieved context is sufficient, FAIR-RAG explicitly evaluates the available evidence, identifies unresolved information needs, and generates targeted follow-up queries. This process continues until the evidence is sufficiently comprehensive for a grounded final answer.</p> <div class="row row-cols-2 row-cols-md-4 g-3 text-center my-4"> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">0.453</h3> <small>HotpotQA F1</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">+8.3</h3> <small>F1 points over the strongest iterative baseline</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">4</h3> <small>QA benchmarks</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">2–3</h3> <small>Effective refinement iterations</small> </div> </div> </div> </div> <h2 id="research-problem">Research Problem</h2> <p>Standard RAG systems usually retrieve a fixed set of documents and immediately generate an answer. This approach is fragile for questions that require multiple pieces of evidence, entity resolution, comparison, or several dependent reasoning steps.</p> <p>A weak initial query may retrieve only part of the required information. Existing iterative systems can also propagate noise when they use an entire generated answer as the next retrieval query.</p> <p>FAIR-RAG addresses this problem by making <strong>evidence sufficiency</strong>, rather than generation alone, the central control signal of the pipeline.</p> <h2 id="core-contributions">Core Contributions</h2> <h3 id="structured-evidence-assessment">Structured Evidence Assessment</h3> <p>The central module, <strong>Structured Evidence Assessment (SEA)</strong>, converts the original question into a checklist of required findings. It then audits the accumulated evidence against that checklist and distinguishes between:</p> <ul> <li>confirmed findings,</li> <li>unsupported requirements,</li> <li>and explicit information gaps.</li> </ul> <p>These gaps become actionable signals for the next retrieval cycle.</p> <h3 id="gap-driven-query-refinement">Gap-driven Query Refinement</h3> <p>Rather than rewriting the original query generically, FAIR-RAG creates focused sub-queries that target only the missing information. Confirmed findings can be reused to make subsequent searches more precise.</p> <h3 id="evidence-grounded-generation">Evidence-grounded Generation</h3> <p>The final answer is generated only after the evidence-assessment stage determines that the context is sufficiently complete. The generator is constrained to use the validated evidence and provide traceable citations.</p> <h3 id="adaptive-resource-allocation">Adaptive Resource Allocation</h3> <p>The framework can assign different language models to different tasks according to their complexity, balancing answer quality, computational cost, and latency.</p> <h2 id="system-architecture">System Architecture</h2> <div class="text-center my-4"> <img src="/assets/img/projects/fair-rag/architecture.png" alt="FAIR-RAG architecture and iterative evidence-refinement pipeline" class="img-fluid rounded z-depth-1"> <p class="text-muted small mt-2"> FAIR-RAG progressively retrieves, filters, evaluates, and refines evidence before final generation. </p> </div> <p>The workflow contains four main stages:</p> <ol> <li><strong>Initial query analysis and adaptive routing</strong></li> <li><strong>Query decomposition and retrieval</strong></li> <li><strong>Iterative filtering, evidence assessment, and query refinement</strong></li> <li><strong>Faithful answer generation from validated evidence</strong></li> </ol> <h2 id="structured-evidence-assessment-1">Structured Evidence Assessment</h2> <div class="text-center my-4"> <img src="/assets/img/projects/fair-rag/sea-module.png" alt="Structured Evidence Assessment and information-gap analysis" class="img-fluid rounded z-depth-1"> </div> <p>SEA differs from a conventional relevance classifier. It does not merely ask whether a document is related to the question. It asks whether the <strong>entire evidence set supports every informational requirement needed to answer the question</strong>.</p> <p>This provides an interpretable stopping criterion and prevents the pipeline from terminating simply because it has retrieved several topically related documents.</p> <h2 id="experimental-results">Experimental Results</h2> <p>FAIR-RAG was evaluated under a unified experimental setup on:</p> <ul> <li>HotpotQA</li> <li>2WikiMultiHopQA</li> <li>MusiQue</li> <li>TriviaQA</li> </ul> <p>The adaptive three-iteration configuration achieved:</p> <ul> <li><strong>0.453 F1 on HotpotQA</strong></li> <li><strong>0.320 F1 on 2WikiMultiHopQA</strong></li> <li><strong>0.264 F1 on MusiQue</strong></li> <li><strong>0.731 F1 on TriviaQA</strong></li> </ul> <p>Under the controlled comparison reported in the paper, FAIR-RAG outperformed representative standard, conditional, reasoning-based, and iterative RAG baselines, with the largest gains appearing on complex multi-hop tasks.</p> <div class="text-center my-4"> <img src="/assets/img/projects/fair-rag/benchmark-results.png" alt="FAIR-RAG benchmark results compared with representative RAG baselines" class="img-fluid rounded z-depth-1"> </div> <h2 id="iterationefficiency-trade-off">Iteration–Efficiency Trade-off</h2> <p>The ablation study showed that iterative evidence gathering is valuable for complex questions, but unlimited iteration is not optimal.</p> <p>For multi-hop datasets, the strongest balance between answer quality and resource consumption was generally reached after two or three iterations. Additional cycles increased API calls and token consumption while offering limited or negative quality gains.</p> <div class="text-center my-4"> <img src="/assets/img/projects/fair-rag/iteration-ablation.png" alt="Trade-off between refinement iterations, answer quality, and computational cost" class="img-fluid rounded z-depth-1"> </div> <h2 id="my-role">My Role</h2> <p>As the <strong>first author and primary framework designer</strong>, I contributed to:</p> <ul> <li>defining the FAIR-RAG research problem and architecture,</li> <li>designing the Structured Evidence Assessment methodology,</li> <li>developing the gap-driven adaptive query-refinement strategy,</li> <li>implementing and integrating the multi-stage pipeline,</li> <li>designing the controlled benchmark evaluation,</li> <li>conducting ablation and component-level analyses,</li> <li>and writing and preparing the research manuscript.</li> </ul> <h2 id="technology-and-research-stack">Technology and Research Stack</h2> <p><code class="language-plaintext highlighter-rouge">Python</code> · <code class="language-plaintext highlighter-rouge">LLM Agents</code> · <code class="language-plaintext highlighter-rouge">Retrieval-Augmented Generation</code> · <code class="language-plaintext highlighter-rouge">FlashRAG</code> · <code class="language-plaintext highlighter-rouge">Faiss</code> · <code class="language-plaintext highlighter-rouge">Dense Retrieval</code> · <code class="language-plaintext highlighter-rouge">Prompt Engineering</code> · <code class="language-plaintext highlighter-rouge">Llama 3</code> · <code class="language-plaintext highlighter-rouge">Multi-hop QA</code> · <code class="language-plaintext highlighter-rouge">LLM-as-Judge Evaluation</code></p> <h2 id="research-significance">Research Significance</h2> <p>FAIR-RAG demonstrates that reliable retrieval-augmented reasoning requires more than repeatedly retrieving documents. The system must explicitly represent what has been established, what remains unknown, and what evidence is still needed.</p> <p>This evidence-driven perspective is directly relevant to trustworthy AI, automated fact-checking, scientific question answering, and other knowledge-intensive applications where unsupported or incomplete answers can have significant consequences.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Mohammad Aghajani Asl. © 2026 Mohammad Aghajani Asl. Built with al-folio and hosted on GitHub Pages. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "Peer-reviewed publications and research preprints in trustworthy AI, agentic RAG, multi-hop reasoning, question answering, and Persian NLP.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Selected research, applied AI, and data-engineering projects by Mohammad Aghajani Asl.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Academic and professional CV of Mohammad Aghajani Asl, an AI and NLP researcher working on trustworthy AI, agentic RAG, question answering, Persian NLP, and large-scale data infrastructure.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-contact",
+          title: "Contact",
+          description: "Contact Mohammad Aghajani Asl regarding PhD opportunities, research collaborations, trustworthy AI, NLP, agentic RAG, and applied AI projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
+        },{id: "projects-fair-rag",
+          title: 'FAIR-RAG',
+          description: "An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01-fair-rag/";
+            },},{id: "projects-farsiqa",
+          title: 'FARSIQA',
+          description: "An end-to-end, safety-aware Persian question-answering system built on FAIR-RAG for faithful reasoning over authoritative domain knowledge.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/02-farsiqa/";
+            },},{id: "projects-islamicpcqa",
+          title: 'IslamicPCQA',
+          description: "A large-scale Persian dataset and benchmark for multi-hop complex question answering over unstructured Islamic text resources.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/03-islamicpcqa/";
+            },},{id: "projects-hermes",
+          title: 'HERMES',
+          description: "A human-guided, evidence-grounded multi-agent system supporting the complete scholarly workflow for long-form humanities research and writing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/04-hermes/";
+            },},{id: "projects-hooshyar",
+          title: 'HOOSHYAR',
+          description: "An explainable AI advisory system that evaluates fraud-risk indicators in online classified listings and helps users make safer transaction decisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/05-hooshyar/";
+            },},{id: "projects-trendgeo",
+          title: 'TRENDGEO',
+          description: "A geospatial social-media intelligence platform for detecting, mapping, analyzing, and comparing regional and multilingual trends.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/06-trendgeo/";
+            },},{id: "projects-tizbin",
+          title: 'TIZBIN',
+          description: "A social-media user-discovery and behavioral-intelligence platform for profile enrichment, activity analysis, relationship discovery, and model-assisted user insights.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/07-tizbin/";
+            },},{id: "projects-telegram-crawler",
+          title: 'TELEGRAM_CRAWLER',
+          description: "A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/08-telegram-crawler/";
+            },},{id: "projects-twitter-crawler",
+          title: 'TWITTER_CRAWLER',
+          description: "A scalable and recoverable social-data ingestion infrastructure for collecting, normalizing, enriching, and indexing large continuously updated Twitter/X datasets.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/09-twitter-crawler/";
+            },},{id: "projects-large-scale-persian-nlp-amp-data-infrastructure",
+          title: 'Large-scale Persian NLP &amp;amp; Data Infrastructure',
+          description: "An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10-persian-nlp-infrastructure/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%61%67%68%61%6A%61%6E%69%37%36%6D@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/Mohammad_Aghajani_Asl_CV.pdf", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/aghajani76m", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=CvS9EW8AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Mohammad-Aghajani-Asl/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

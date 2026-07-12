@@ -1,0 +1,187 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Large-scale Persian NLP &amp; Data Infrastructure | Mohammad Aghajani Asl </title> <meta name="author" content="Mohammad Aghajani Asl"> <meta name="description" content="An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis."> <meta name="keywords" content="Mohammad Aghajani Asl, NLP, artificial intelligence, trustworthy AI, agentic RAG, retrieval-augmented generation, multi-hop reasoning, automated fact-checking, hallucination mitigation, question answering, information retrieval, Persian NLP, low-resource NLP, AI for science "> <meta property="og:site_name" content="Mohammad Aghajani Asl"> <meta property="og:type" content="website"> <meta property="og:title" content="Mohammad Aghajani Asl | Large-scale Persian NLP &amp; Data Infrastructure"> <meta property="og:url" content="https://aghajani76m.github.io/projects/10-persian-nlp-infrastructure/"> <meta property="og:description" content="An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis."> <meta property="og:image" content="/assets/img/og_image.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Large-scale Persian NLP &amp; Data Infrastructure"> <meta name="twitter:description" content="An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis."> <meta name="twitter:image" content="/assets/img/og_image.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Mohammad Aghajani Asl"
+        },
+        "url": "https://aghajani76m.github.io/projects/10-persian-nlp-infrastructure/",
+        "@type": "WebSite",
+        "description": "An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis.",
+        "headline": "Large-scale Persian NLP & Data Infrastructure",
+        
+        "sameAs": [null,"https://github.com/aghajani76m","https://scholar.google.com/citations?user=CvS9EW8AAAAJ","https://www.researchgate.net/profile/Mohammad-Aghajani-Asl/"],
+        
+        "name": "Mohammad Aghajani Asl",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.png?v=89b6499757ed788c107e8e3d30c4aeea"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://aghajani76m.github.io/projects/10-persian-nlp-infrastructure/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Mohammad Aghajani Asl </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">Contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Large-scale Persian NLP &amp; Data Infrastructure</h1> <p class="post-description">An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis.</p> </header> <article> <div class="text-center mb-4"> <img src="/assets/img/projects/persian-nlp-infrastructure/cover.png" alt="Large-scale Persian NLP and data infrastructure" class="img-fluid rounded z-depth-1"> </div> <div class="d-flex flex-wrap justify-content-center gap-2 mb-4"> <span class="badge rounded-pill text-bg-primary px-3 py-2"> Persian NLP </span> <span class="badge rounded-pill text-bg-light border px-3 py-2"> Dataset Engineering </span> <span class="badge rounded-pill text-bg-light border px-3 py-2"> Model Fine-tuning </span> <span class="badge rounded-pill text-bg-light border px-3 py-2"> Production ML </span> </div> <h2 id="overview">Overview</h2> <p><strong>Large-scale Persian NLP &amp; Data Infrastructure</strong> is an end-to-end platform for transforming heterogeneous Persian social-media data into curated datasets, trained language models, scalable APIs, and production analytical services.</p> <p>The project was developed to support Persian-language intelligence capabilities required by systems such as user profiling, trend analysis, geographic analytics, content exploration, and large-scale search.</p> <p>Its scope extended beyond model training and included the complete machine-learning lifecycle:</p> <ul> <li>data collection and sampling,</li> <li>Persian text normalization,</li> <li>annotation and label quality control,</li> <li>dataset versioning,</li> <li>transformer fine-tuning,</li> <li>evaluation and error analysis,</li> <li>API development,</li> <li>containerized deployment,</li> <li>inference monitoring,</li> <li>and integration with large Elasticsearch-backed applications.</li> </ul> <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center my-4"> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">250K+</h3> <small>Annotated and training samples across Persian NLP tasks</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">3+</h3> <small>Core model families for sentiment, topic, and geolocation</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h3 class="mb-1">~90%</h3> <small>Internal Persian sentiment evaluation accuracy</small> </div> </div> </div> <div class="col"> <div class="card h-100"> <div class="card-body"> <h4 class="mb-2">Production</h4> <small>Containerized models integrated with operational systems</small> </div> </div> </div> </div> <h2 id="the-problem">The Problem</h2> <p>Persian NLP systems face several challenges that are less visible in high-resource languages.</p> <p>These challenges include:</p> <ul> <li>limited availability of high-quality labeled datasets,</li> <li>inconsistent spelling and Unicode representation,</li> <li>informal social-media language,</li> <li>code-switching,</li> <li>dialectal variation,</li> <li>ambiguous geographic references,</li> <li>imbalanced topic distributions,</li> <li>limited benchmark coverage,</li> <li>and substantial domain shift between training and production data.</li> </ul> <p>Training a model on a single static dataset is therefore insufficient.</p> <p>Reliable Persian-language services require a repeatable infrastructure that can:</p> <ol> <li>collect representative data,</li> <li>construct and revise labels,</li> <li>detect quality problems,</li> <li>train and evaluate new model versions,</li> <li>deploy the models safely,</li> <li>and monitor their behavior on changing production data.</li> </ol> <h2 id="end-to-end-dataset-pipeline">End-to-end Dataset Pipeline</h2> <div class="text-center my-4"> <img src="/assets/img/projects/persian-nlp-infrastructure/dataset-pipeline.png" alt="End-to-end Persian NLP dataset construction and quality-control pipeline" class="img-fluid rounded z-depth-1"> </div> <p>The dataset pipeline was designed as a reproducible process rather than a collection of manually edited files.</p> <h3 id="1-data-selection">1. Data Selection</h3> <p>Candidate Persian records were sampled from authorized internal or public data collections.</p> <p>Sampling strategies were adapted to the task.</p> <p>Examples include:</p> <ul> <li>topic-balanced sampling,</li> <li>sentiment-rich keyword sampling,</li> <li>location-related profile sampling,</li> <li>temporal sampling,</li> <li>and uncertainty-based selection from an existing model.</li> </ul> <p>The objective was to create representative datasets rather than simply selecting the most frequent records.</p> <h3 id="2-persian-text-normalization">2. Persian Text Normalization</h3> <p>Social-media text contains many surface-level inconsistencies.</p> <p>The normalization process handled issues such as:</p> <ul> <li>Arabic and Persian character variants,</li> <li>half-spaces,</li> <li>duplicated whitespace,</li> <li>URLs,</li> <li>mentions,</li> <li>hashtags,</li> <li>emoji,</li> <li>repeated characters,</li> <li>control characters,</li> <li>malformed Unicode,</li> <li>and platform-specific markup.</li> </ul> <p>Original text was preserved when required so that normalization decisions remained reversible.</p> <h3 id="3-duplicate-and-near-duplicate-removal">3. Duplicate and Near-duplicate Removal</h3> <p>Duplicate records can inflate evaluation results and bias the model toward frequently repeated content.</p> <p>The pipeline therefore considered:</p> <ul> <li>exact text duplication,</li> <li>reposted content,</li> <li>normalized-text equality,</li> <li>near-duplicate similarity,</li> <li>and cross-split leakage.</li> </ul> <p>Source-aware identifiers were retained to preserve provenance while preventing duplicated training examples.</p> <h3 id="4-candidate-labeling">4. Candidate Labeling</h3> <p>Labels were produced using combinations of:</p> <ul> <li>existing structured metadata,</li> <li>dictionaries and deterministic rules,</li> <li>previously trained classifiers,</li> <li>model-assisted annotation,</li> <li>and human review.</li> </ul> <p>Automatically proposed labels were treated as candidates rather than unquestioned ground truth.</p> <h3 id="5-human-review">5. Human Review</h3> <p>Ambiguous, low-confidence, or strategically important samples were reviewed or corrected manually.</p> <p>Review guidelines defined:</p> <ul> <li>the meaning of each class,</li> <li>positive and negative examples,</li> <li>treatment of mixed or ambiguous records,</li> <li>and conditions under which a sample should be excluded.</li> </ul> <h3 id="6-dataset-balancing">6. Dataset Balancing</h3> <p>Real-world distributions are often highly imbalanced.</p> <p>The dataset-building workflow used techniques such as:</p> <ul> <li>controlled downsampling,</li> <li>targeted minority-class sampling,</li> <li>class weighting,</li> <li>and task-specific augmentation.</li> </ul> <p>The objective was not to force every class to have identical size, but to provide sufficient coverage for reliable evaluation and learning.</p> <h3 id="7-split-construction">7. Split Construction</h3> <p>Training, validation, and test sets were created with attention to:</p> <ul> <li>source separation,</li> <li>temporal leakage,</li> <li>duplicated users or posts,</li> <li>topic overlap,</li> <li>and geographic overlap.</li> </ul> <p>Dataset splits were versioned so that model experiments could be reproduced.</p> <h2 id="persian-nlp-task-suite">Persian NLP Task Suite</h2> <div class="text-center my-4"> <img src="/assets/img/projects/persian-nlp-infrastructure/nlp-task-suite.png" alt="Persian NLP model suite for sentiment, topic, and geographic analysis" class="img-fluid rounded z-depth-1"> </div> <p>The infrastructure supported several complementary NLP tasks.</p> <h2 id="sentiment-and-emotion-analysis">Sentiment and Emotion Analysis</h2> <p>The sentiment service classifies the general affective orientation of Persian text.</p> <p>Depending on the application and model version, outputs can include categories such as:</p> <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Positive
+Neutral
+Negative
+Mixed or Uncertain
+</code></pre></div></div> <p>The underlying dataset included examples from informal and noisy Persian social-media content.</p> <p>Important challenges included:</p> <ul> <li>sarcasm,</li> <li>indirect sentiment,</li> <li>political or cultural context,</li> <li>emoji-dependent meaning,</li> <li>mixed positive and negative language,</li> <li>and neutral news-like statements.</li> </ul> <p>A Persian sentiment model achieved approximately <strong>90% accuracy in its task-specific internal evaluation</strong>.</p> <p>This number represents the reported evaluation under the project’s own dataset and split. It should not be interpreted as guaranteed accuracy across every Persian domain or platform.</p> <h2 id="topic-classification">Topic Classification</h2> <p>The topic-classification service assigns broad semantic categories to Persian content.</p> <p>Representative classes include:</p> <ul> <li>political,</li> <li>social,</li> <li>economic,</li> <li>scientific and technological,</li> <li>cultural and artistic,</li> <li>medical,</li> <li>religious,</li> <li>sports,</li> <li>and international content.</li> </ul> <p>The model was used to enrich search and analytical records, enabling:</p> <ul> <li>topic filtering,</li> <li>trend summaries,</li> <li>user-interest analysis,</li> <li>content distribution charts,</li> <li>and comparative analytics.</li> </ul> <p>Multi-topic or ambiguous content can be represented through confidence scores or a fallback category rather than being forced into a misleading class.</p> <h2 id="geographic-inference">Geographic Inference</h2> <p>The geolocation service estimates the likely geographic context associated with a user or record.</p> <p>Depending on the available evidence, outputs can include:</p> <ul> <li>country,</li> <li>province,</li> <li>or unknown / insufficient evidence.</li> </ul> <p>Potential signals include:</p> <ul> <li>profile location text,</li> <li>place names in biography or posts,</li> <li>language and dialect features,</li> <li>regional entities,</li> <li>time-related behavior,</li> <li>and previously observed geographic metadata.</li> </ul> <p>Geolocation output is an estimate and not verified residence information.</p> <p>Each prediction should be accompanied by:</p> <ul> <li>confidence,</li> <li>evidence coverage,</li> <li>and an unknown option.</li> </ul> <p>For users associated with Iran, a second-stage model can estimate province-level location when sufficient evidence is available.</p> <h2 id="language-and-content-enrichment">Language and Content Enrichment</h2> <p>Supporting services enrich raw records with information such as:</p> <ul> <li>detected language,</li> <li>normalized text,</li> <li>extracted hashtags,</li> <li>mentions,</li> <li>named entities,</li> <li>media type,</li> <li>and model-processing status.</li> </ul> <p>These attributes provide a common analytical layer for downstream search and dashboards.</p> <h2 id="model-development-lifecycle">Model Development Lifecycle</h2> <div class="text-center my-4"> <img src="/assets/img/projects/persian-nlp-infrastructure/model-development.png" alt="Persian NLP model training, evaluation, error analysis, and release lifecycle" class="img-fluid rounded z-depth-1"> </div> <p>The model-development process followed a controlled sequence.</p> <h3 id="baseline-development">Baseline Development</h3> <p>Before fine-tuning larger transformer models, simpler baselines were established using methods such as:</p> <ul> <li>TF-IDF,</li> <li>logistic regression,</li> <li>linear support-vector machines,</li> <li>and conventional tree-based models where appropriate.</li> </ul> <p>Baselines provided a transparent reference point and helped identify whether increased model complexity was justified.</p> <h3 id="transformer-fine-tuning">Transformer Fine-tuning</h3> <p>Persian and multilingual transformer models were fine-tuned using task-specific datasets.</p> <p>Training considered:</p> <ul> <li>class imbalance,</li> <li>sequence length,</li> <li>learning rate,</li> <li>batch size,</li> <li>early stopping,</li> <li>and checkpoint selection.</li> </ul> <h3 id="evaluation">Evaluation</h3> <p>Evaluation went beyond overall accuracy.</p> <p>Depending on the task, metrics included:</p> <ul> <li>Macro F1,</li> <li>per-class precision and recall,</li> <li>confusion matrices,</li> <li>geographic-level accuracy,</li> <li>coverage,</li> <li>and confidence calibration.</li> </ul> <p>Macro-level metrics were important because a high-frequency class could otherwise dominate the overall score.</p> <h3 id="error-analysis">Error Analysis</h3> <p>Incorrect predictions were grouped according to causes such as:</p> <ul> <li>ambiguous labels,</li> <li>annotation inconsistency,</li> <li>sarcasm,</li> <li>insufficient context,</li> <li>rare entities,</li> <li>code-switching,</li> <li>geographic-name ambiguity,</li> <li>and domain shift.</li> </ul> <p>The findings were used to improve both the dataset and the model.</p> <h3 id="model-versioning">Model Versioning</h3> <p>Every production candidate was associated with:</p> <ul> <li>dataset version,</li> <li>preprocessing configuration,</li> <li>training parameters,</li> <li>evaluation report,</li> <li>model artifact,</li> <li>and release status.</li> </ul> <p>This made it possible to compare versions and roll back deployments when necessary.</p> <h2 id="production-architecture">Production Architecture</h2> <div class="text-center my-4"> <img src="/assets/img/projects/persian-nlp-infrastructure/production-architecture.png" alt="Production architecture for Persian NLP models and analytical services" class="img-fluid rounded z-depth-1"> </div> <p>The production infrastructure separates model training from online serving.</p> <h3 id="data-layer">Data Layer</h3> <p>Large Elasticsearch collections provide the source and destination for analytical records.</p> <p>The data layer supports:</p> <ul> <li>full-text search,</li> <li>batch selection,</li> <li>aggregation,</li> <li>model-status filtering,</li> <li>and writing enrichment results back to processed indexes.</li> </ul> <h3 id="batch-inference">Batch Inference</h3> <p>Batch workers process historical or newly indexed records.</p> <p>Batch workflows are appropriate for:</p> <ul> <li>large-scale enrichment,</li> <li>backfilling new model outputs,</li> <li>reprocessing after model upgrades,</li> <li>and offline analytical jobs.</li> </ul> <h3 id="online-apis">Online APIs</h3> <p>FastAPI services provide online inference for applications requiring immediate predictions.</p> <p>The APIs expose structured request and response contracts and can support:</p> <ul> <li>single-record inference,</li> <li>controlled batch inference,</li> <li>health checks,</li> <li>model-version information,</li> <li>and confidence values.</li> </ul> <h3 id="caching">Caching</h3> <p>Redis can be used to avoid repeated inference for unchanged records and to reduce response latency.</p> <h3 id="containerization">Containerization</h3> <p>Model services are packaged with Docker to keep:</p> <ul> <li>model dependencies,</li> <li>preprocessing code,</li> <li>runtime libraries,</li> <li>and deployment configuration</li> </ul> <p>consistent across development and production environments.</p> <h3 id="monitoring">Monitoring</h3> <p>Operational monitoring covers:</p> <ul> <li>API latency,</li> <li>request failures,</li> <li>batch throughput,</li> <li>queue backlog,</li> <li>model-loading status,</li> <li>prediction distributions,</li> <li>and data-processing lag.</li> </ul> <p>Sudden shifts in predicted class distributions can indicate data drift, pipeline failure, or a new real-world event requiring inspection.</p> <h2 id="integration-with-analytical-products">Integration with Analytical Products</h2> <p>The model infrastructure was designed to serve multiple applications rather than one isolated interface.</p> <p>Outputs can support systems such as:</p> <ul> <li>social-media trend analysis,</li> <li>geographic trend mapping,</li> <li>user profiling,</li> <li>advanced search,</li> <li>content filtering,</li> <li>comparative dashboards,</li> <li>and recommendation of related records.</li> </ul> <p>A common enrichment schema allows several applications to consume the same model outputs consistently.</p> <h2 id="data-and-model-quality">Data and Model Quality</h2> <p>Production model quality depends on more than the neural architecture.</p> <p>The project therefore emphasized:</p> <ul> <li>annotation guidelines,</li> <li>representative sampling,</li> <li>duplicate control,</li> <li>split integrity,</li> <li>class-level evaluation,</li> <li>error categorization,</li> <li>and feedback from downstream users.</li> </ul> <p>A model with a high aggregate metric can still be unsuitable if it systematically fails on a minority class, region, dialect, or topic.</p> <h2 id="responsible-use">Responsible Use</h2> <p>Several model outputs involve sensitive inferences.</p> <p>Particular care is required for:</p> <ul> <li>geographic inference,</li> <li>sentiment interpretation,</li> <li>user-interest classification,</li> <li>and analysis of social or political content.</li> </ul> <p>Responsible operation requires:</p> <ul> <li>processing only authorized data,</li> <li>distinguishing observed metadata from inferred attributes,</li> <li>exposing confidence and uncertainty,</li> <li>supporting an unknown class,</li> <li>avoiding irreversible decisions based solely on model output,</li> <li>evaluating bias across classes and regions,</li> <li>and limiting access to sensitive analytical results.</li> </ul> <p>Geolocation and user-topic predictions must be interpreted as probabilistic analytical signals rather than verified personal facts.</p> <h2 id="public-portfolio-disclosure">Public Portfolio Disclosure</h2> <p>The public project page does not disclose:</p> <ul> <li>private datasets,</li> <li>annotation-user identities,</li> <li>internal Elasticsearch index names,</li> <li>server addresses,</li> <li>credentials,</li> <li>sensitive geographic records,</li> <li>private source lists,</li> <li>or model artifacts that cannot be released.</li> </ul> <p>Aggregate dataset size and task-level results are presented only to demonstrate engineering scale and model-development experience.</p> <h2 id="my-role">My Role</h2> <p>As the <strong>AI/NLP engineer and data-infrastructure lead</strong>, I contributed to:</p> <ul> <li>designing the Persian NLP data lifecycle,</li> <li>constructing and quality-controlling large labeled datasets,</li> <li>developing Persian normalization and preprocessing pipelines,</li> <li>training sentiment, topic, and geolocation models,</li> <li>designing evaluation and error-analysis workflows,</li> <li>implementing batch and online inference services,</li> <li>developing high-throughput FastAPI endpoints,</li> <li>integrating model outputs with Elasticsearch,</li> <li>containerizing and deploying NLP services,</li> <li>monitoring production inference workflows,</li> <li>and maintaining model and dataset versions.</li> </ul> <h2 id="technology-stack">Technology Stack</h2> <p><code class="language-plaintext highlighter-rouge">Python</code> · <code class="language-plaintext highlighter-rouge">PyTorch</code> · <code class="language-plaintext highlighter-rouge">Transformers</code> · <code class="language-plaintext highlighter-rouge">Scikit-learn</code> · <code class="language-plaintext highlighter-rouge">Pandas</code> · <code class="language-plaintext highlighter-rouge">NumPy</code> · <code class="language-plaintext highlighter-rouge">FastAPI</code> · <code class="language-plaintext highlighter-rouge">Elasticsearch</code> · <code class="language-plaintext highlighter-rouge">Redis</code> · <code class="language-plaintext highlighter-rouge">Docker</code> · <code class="language-plaintext highlighter-rouge">Kibana</code> · <code class="language-plaintext highlighter-rouge">CI/CD</code> · <code class="language-plaintext highlighter-rouge">Index Lifecycle Management</code></p> <h2 id="project-significance">Project Significance</h2> <p>This project demonstrates the complete transition from raw Persian social-media data to production-ready language-intelligence services.</p> <p>Its contribution is not a single classifier, but an integrated data-centric infrastructure covering dataset creation, annotation, transformer training, evaluation, scalable serving, Elasticsearch integration, and responsible operational use.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Mohammad Aghajani Asl. © 2026 Mohammad Aghajani Asl. Built with al-folio and hosted on GitHub Pages. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "Peer-reviewed publications and research preprints in trustworthy AI, agentic RAG, multi-hop reasoning, question answering, and Persian NLP.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "Selected research, applied AI, and data-engineering projects by Mohammad Aghajani Asl.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Academic and professional CV of Mohammad Aghajani Asl, an AI and NLP researcher working on trustworthy AI, agentic RAG, question answering, Persian NLP, and large-scale data infrastructure.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-contact",
+          title: "Contact",
+          description: "Contact Mohammad Aghajani Asl regarding PhD opportunities, research collaborations, trustworthy AI, NLP, agentic RAG, and applied AI projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
+        },{id: "projects-fair-rag",
+          title: 'FAIR-RAG',
+          description: "An evidence-driven agentic RAG framework that identifies missing information and iteratively refines retrieval for complex multi-hop questions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01-fair-rag/";
+            },},{id: "projects-farsiqa",
+          title: 'FARSIQA',
+          description: "An end-to-end, safety-aware Persian question-answering system built on FAIR-RAG for faithful reasoning over authoritative domain knowledge.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/02-farsiqa/";
+            },},{id: "projects-islamicpcqa",
+          title: 'IslamicPCQA',
+          description: "A large-scale Persian dataset and benchmark for multi-hop complex question answering over unstructured Islamic text resources.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/03-islamicpcqa/";
+            },},{id: "projects-hermes",
+          title: 'HERMES',
+          description: "A human-guided, evidence-grounded multi-agent system supporting the complete scholarly workflow for long-form humanities research and writing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/04-hermes/";
+            },},{id: "projects-hooshyar",
+          title: 'HOOSHYAR',
+          description: "An explainable AI advisory system that evaluates fraud-risk indicators in online classified listings and helps users make safer transaction decisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/05-hooshyar/";
+            },},{id: "projects-trendgeo",
+          title: 'TRENDGEO',
+          description: "A geospatial social-media intelligence platform for detecting, mapping, analyzing, and comparing regional and multilingual trends.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/06-trendgeo/";
+            },},{id: "projects-tizbin",
+          title: 'TIZBIN',
+          description: "A social-media user-discovery and behavioral-intelligence platform for profile enrichment, activity analysis, relationship discovery, and model-assisted user insights.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/07-tizbin/";
+            },},{id: "projects-telegram-crawler",
+          title: 'TELEGRAM_CRAWLER',
+          description: "A scalable and fault-tolerant Telegram data-collection infrastructure built with Telethon for asynchronous crawling, incremental synchronization, normalization, and searchable indexing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/08-telegram-crawler/";
+            },},{id: "projects-twitter-crawler",
+          title: 'TWITTER_CRAWLER',
+          description: "A scalable and recoverable social-data ingestion infrastructure for collecting, normalizing, enriching, and indexing large continuously updated Twitter/X datasets.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/09-twitter-crawler/";
+            },},{id: "projects-large-scale-persian-nlp-amp-data-infrastructure",
+          title: 'Large-scale Persian NLP &amp;amp; Data Infrastructure',
+          description: "An end-to-end data and model infrastructure for constructing Persian-language datasets, training NLP models, and deploying production services for sentiment, topic, and geolocation analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10-persian-nlp-infrastructure/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%61%67%68%61%6A%61%6E%69%37%36%6D@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/Mohammad_Aghajani_Asl_CV.pdf", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/aghajani76m", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=CvS9EW8AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Mohammad-Aghajani-Asl/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
