@@ -6,7 +6,7 @@ subtitle: AI/NLP Researcher & Engineer · Trustworthy AI · Agentic AI · Persia
 
 profile:
   align: right
-  image: prof_pic_2.jpg
+  image: prof_pic_2.png
   image_circular: false
   more_info: >
     <p>Tehran, Iran</p>
